@@ -5,7 +5,7 @@ import { SiGmail } from "react-icons/si";
 
 export default function SideBar() {
   return (
-    <aside className="sidebar-sticky sidebar justify-start md:flex hidden">
+    <aside className="md:sidebar-sticky sidebar justify-start fixed md:flex hidden ">
       <section className="sidebar-title flex flex-col items-center p-4 gap-4 ">
         <img src="./profile.jpg" className="max-w-44  rounded-tr-3xl rounded-bl-3xl rounded-br-[4rem] rounded-tl-[4rem] w-full h-44 border-4 border-primary-0" alt="" />
    <div className="">
@@ -13,7 +13,7 @@ export default function SideBar() {
    <h2 className="font-[200] text-xl text-center mt-2 border-b-[1px] border-b-primary-0">FullStack Developer</h2>
    </div>
     
-    <div className="icons text-2xl flex gap-4 text-primary-0">
+    <div className="icons text-2xl flex gap-4">
       <a href=""><FaGithub/></a>
       <a href=""><FaFacebook /></a>
       <a href=""><FaLinkedin /></a>
