@@ -45,7 +45,7 @@ export default function Projects() {
       technologies: ["React", "Ruby on Rails", "PostgreSQL"],
       demoLink: "https://demo-link.com",
       codeLink: "https://github.com/your-repo",
-      image: "./project/project1.PNG"
+      image: "./project/lms.PNG"
     },
     {
       title: "Clouds Guru Website",
