@@ -21,35 +21,68 @@ export default function Navbar() {
   }
 
   return (
-    <div className="w-full text-white fixed top-0 left-0 right-0 md:hidden border-none z-50">
-     <div className="flex justify-between p-6">
-     <div className="w-full h-14 bg-slate-950 blur-[3rem] left-0 absolute "></div>
-      <h1 className="text-2xl font-semibold text-primary-0 z-30">Portfolio</h1>
-     <div className="flex text-3xl cursor-pointer hover:text-primary-300 transition-colors duration-200 z-30">
-     <MdOutlineMenu onClick={handleOpenNav} className={`${icon1}`} />
-     <IoIosClose onClick={handleCloseNav} className={`${icon2}`} />
-     </div>
-     </div>
-
-      <nav id="navbar" className={` w-full h-screen  md:hidden font-['Poppins'] p-4 ${nav}`}>
-    <div className="flex flex-col gap-10 text-white  text-center h-screen ">
-    <div className="w-screen top-0 z-20  h-screen bg-slate-950 left-0 absolute "></div>
-      <a className="z-30 p-2" href="/">Home</a>
-      <a className="z-30 p-2" href="/about">About Me</a>
-      <a className="z-30 p-2" href="/skills">Skills</a>
-      <a className="z-30 p-2" href="/myprojects">Projects</a>
-
-      <div className="icons text-2xl flex items-center justify-center gap-4 py-5 border-t-2 border-gray-400 z-30">
-      <a href=""><FaGithub/></a>
-      <a href=""><FaFacebook /></a>
-      <a href=""><FaLinkedin /></a>
-      <a href=""><SiGmail/></a>
-    </div>
- 
+    <div className="w-full text-white fixed top-0 left-0 right-0 border-none z-50">
+    {/* Header */}
+    <div className="flex md:hidden justify-between items-center p-6 bg-gray-950 bg-opacity-90 z-50">
+      <h1 className="text-2xl font-semibold text-primary-0 z-30">{`</>`}Portfolio</h1>
+      <div className="flex text-3xl cursor-pointer hover:text-primary-300 transition-colors duration-200 z-30">
+        <MdOutlineMenu onClick={handleOpenNav} className={`${icon1}`} />
+        <IoIosClose onClick={handleCloseNav} className={`${icon2}`} />
+      </div>
     </div>
 
-  </nav>
+    {/* Navigation */}
+    <nav className={`fixed top-0 left-0 w-full h-screen bg-slate-950 mt-14 text-white z-40 ${nav}`}>
+      <div className="flex flex-col items-center justify-center gap-8 h-full">
+        {/* Navigation Links */}
+        <a className="text-lg p-2 hover:text-gray-400 transition duration-300" href="/">
+          Home
+        </a>
+        <a className="text-lg p-2 hover:text-gray-400 transition duration-300" href="/about">
+          About Me
+        </a>
+        <a className="text-lg p-2 hover:text-gray-400 transition duration-300" href="/skills">
+          Skills
+        </a>
+        <a className="text-lg p-2 hover:text-gray-400 transition duration-300" href="/myprojects">
+          Projects
+        </a>
 
-    </div>
+        {/* Social Icons */}
+        <div className="flex items-center justify-center gap-6 mt-10 border-t border-gray-600 pt-4">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl hover:text-gray-400 transition duration-300"
+          >
+            <FaGithub />
+          </a>
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl hover:text-gray-400 transition duration-300"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-2xl hover:text-gray-400 transition duration-300"
+          >
+            <FaLinkedin />
+          </a>
+          <a
+            href="mailto:example@gmail.com"
+            className="text-2xl hover:text-gray-400 transition duration-300"
+          >
+            <SiGmail />
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
   );
 }

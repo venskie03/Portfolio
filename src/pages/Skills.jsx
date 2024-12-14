@@ -3,7 +3,7 @@ import { Typewriter } from 'react-simple-typewriter';
 export default function Skills() {
   return (
     <div className='py-20'>
-      <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center md:text-start">
+      <h1 className="text-xl md:text-2xl font-bold mb-10 text-center md:text-start">
         <span className="text-primary-0">
           <Typewriter
             words={['Skills in Development']}
@@ -18,7 +18,7 @@ export default function Skills() {
       </h1>
 
       <div className="frontend mb-10">
-        <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center md:text-start">
+        <h2 className="text-xl font-semibold mb-6 text-center md:text-start">
           <span className="font-[300] text-tertiary-0">
             <Typewriter
               words={['Front-end Tech Stack']}
@@ -37,7 +37,7 @@ export default function Skills() {
       </div>
 
       <div className="backend mb-10">
-        <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center  md:text-start">
+        <h2 className="text-xl font-semibold mb-6 text-center  md:text-start">
           <span className="font-[300] text-tertiary-0">
             <Typewriter
               words={['Back-end Tech Stack']}
@@ -56,7 +56,7 @@ export default function Skills() {
       </div>
 
       <div className="version-control mb-10">
-        <h2 className="text-xl md:text-2xl font-semibold mb-6 text-center  md:text-start">
+        <h2 className="text-xl font-semibold mb-6 text-center  md:text-start">
           <span className="font-[300] text-tertiary-0">
             <Typewriter
               words={['Version Control']}

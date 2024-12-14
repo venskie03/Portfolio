@@ -27,7 +27,7 @@ export default function About() {
     <div className="py-20 md:px-4 w-full mx-auto">
       {/* Work Experience Section */}
       <section>
-      <h1 className="text-3xl md:text-4xl font-bold mb-10 text-center md:text-start">
+      <h1 className="text-xl md:text-2xl font-bold mb-10 text-center md:text-start">
         <span className="text-primary-0">
           <Typewriter
             words={['Work Experience']}
@@ -43,7 +43,7 @@ export default function About() {
         <div className="space-y-6">
           {workExperiences.map((experience, index) => (
             <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-primary-0 mb-2">{experience.title}</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-primary-0 mb-2">{experience.title}</h3>
               <h4 className="text-lg font-medium text-gray-400 mb-2">{experience.company}</h4>
               <p className="text-gray-300 mb-4">{experience.duration}</p>
               <p className="text-gray-200">{experience.description}</p>
