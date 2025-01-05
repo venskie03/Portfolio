@@ -1,15 +1,16 @@
 /** @type {import('tailwindcss').Config} */
-const config = {
+import rippleui from 'rippleui'; // Use import instead of require
 
+const config = {
   themes: [
     {
       colors: {
-        primary: "#3ABEF9"
+        primary: "#3ABEF9",
+        secondary: "#5DEBD7",
       }
-    } 
+    }
   ]
-
-}
+};
 
 export default {
   content: [
@@ -22,14 +23,15 @@ export default {
         poppins: ["Poppins", "sans-serif"]
       },
       colors: {
-        primary: ["#5DEBD7"],
-        secondary: ["#97FEED"],
-        tertiary: ["#3ABEF9"]
+        primary: "#5DEBD7",
+        secondary: "#97FEED",
+        tertiary: "#3ABEF9"
       }
     },
   },
-  plugins: [require("rippleui")({
-    ...config,
-  })],
-}
-
+  plugins: [
+    rippleui({
+      ...config,
+    })
+  ],
+};

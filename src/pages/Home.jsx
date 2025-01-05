@@ -42,20 +42,20 @@ export default function Home() {
         <p className="text-lg">
           My expertise includes <span className='text-primary-0'>HTML, CSS, JavaScript, React.js, React Native, Tailwind CSS</span>, and <span className='text-primary-0'>Ruby on Rails</span>. I am also proficient in database management with <span className='text-primary-0'>PostgreSQL</span> and have experience in integrating APIs to enhance application functionality. <span className='text-primary-0'>I am always eager to learn new skills and technologies</span> to stay updated with industry trends.
         </p>
-        <div className="mt-6 flex flex-wrap gap-4">
+        <div className="mt-8 flex flex-wrap gap-4">
           <a 
-            href="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/Kevin%20kyle%20Ganados%20As%20Resume.pdf?alt=media&token=fef26235-6877-478a-a22b-20f48e736a26" 
+            href="https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/Kevin%20kyle%20Ganados.pdf?alt=media&token=44623c1d-34e7-4672-ba76-0e1dd14e2a27" 
             download 
-            className="border-2 border-primary-0 hover:bg-white hover:text-black text-white py-2 px-4 rounded flex items-center space-x-2"
+            className="border-2 border-secondary hover:bg-gray-700 hover:text-white text-white py-2 px-4 rounded flex items-center space-x-2"
           >
-            <FaDownload className="text-primary-0" /> 
+            <FaDownload className="text-secondary" /> 
             <span>Download Resume</span>
           </a>
           <a 
             href="https://www.linkedin.com/in/kevin-kyle-ganados-6b0b6a208/" 
-            className="border-2 border-primary-0 hover:bg-white hover:text-black text-white py-2 px-4 rounded flex items-center space-x-2"
+            className="border-2 border-secondary hover:bg-gray-700 hover:text-white text-white py-2 px-4 rounded flex items-center space-x-2"
           >
-            <MdWork className="text-primary-0" /> 
+            <MdWork className="text-secondary" /> 
             <span>Hire Me</span>
           </a>
         </div>

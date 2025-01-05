@@ -22,21 +22,21 @@ export default function Projects() {
     },
     {
       title: "UB Clinical System",
-      private: true,
+      private: false,
       description: "A healthcare management platform developed using React, Ruby on Rails, and PostgreSQL, designed to streamline clinical operations and patient management.",
       technologies: ["React", "Ruby on Rails", "PostgreSQL"],
-      demoLink: "https://demo-link.com",
-      codeLink: "https://github.com/your-repo",
+      demoLink: "http://128.199.83.4:4173/",
+      codeLink: "https://github.com/andradajus/ub-clinical-system",
       image: "./project/ub.PNG"
     },
     {
-      title: "Learning Management System",
-      private: true,
+      title: "Professional Review Buddy",
+      private: false,
       description: "A comprehensive platform for managing courses, assessments, and student progress, developed with React, Ruby on Rails, and PostgreSQL.",
       technologies: ["React", "Ruby on Rails", "PostgreSQL"],
-      demoLink: "https://demo-link.com",
-      codeLink: "https://github.com/your-repo",
-      image: "./project/lms.PNG"
+      demoLink: "https://professionalreviewbuddy.com/",
+      codeLink: "https://github.com/andradajus/lms",
+      image: "./pr.PNG"
     },
     {
       title: "Clouds Guru Website",
@@ -51,7 +51,7 @@ export default function Projects() {
       title: "Momentum Web App",
       private: false,
       description: "A clone of the popular Google Chrome extension, this web app provides a clean and responsive interface, offering personalized dashboards with to-do lists, weather updates, and daily inspiration.",
-      technologies: ["HTML/CSS", "TailwindCSS"],
+      technologies: ["HTML/CSS", "TailwindCSS", "Javascript"],
       demoLink: "https://andrewizo.github.io/momentumapp/",
       codeLink: "https://github.com/andrewizo/momentumapp/tree/kyle's-branch",
       image: "https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/Capture.PNG?alt=media&token=8f66adb8-5ed0-40a2-acbc-01f8831802de"
@@ -96,29 +96,18 @@ export default function Projects() {
       title: "Liloy Websites",
       private: false,
       description: "A responsive website built using HTML/CSS, JavaScript, and TailwindCSS. The project showcases modern web design and functionality.",
-      technologies: ["Ruby On Rails", "PostgreSQL"],
+      technologies: ["PHP", "MYSQL", "HTML", "CSS"],
       demoLink: "https://liloy.gov.ph/",
       codeLink: "",
       image: "./project/liloy.PNG"
     },
   ];
 
-  const projecAptList = [
-    {
-      title: "Movie Android App",
-      private: false,
-      description: "The Movie Android App is a React Native platform for exploring movies. Styled with TailwindCSS, it fetches real-time data from a third-party API to display the latest films, ratings, and details. Powered by Ruby on Rails and PostgreSQL, it offers a responsive and seamless browsing experience for movie enthusiasts.",
-      technologies: ["React Native", "TailwindCSS", "Ruby On Rails", "PostgreSQL"],
-      demoLink: "https://www.mediafire.com/file/9z13f6ktinbzwur/MovieNight.apk/file",
-      codeLink: "https://github.com/venskie03/movie_app",
-      image: "https://firebasestorage.googleapis.com/v0/b/messaging-app-a28b6.appspot.com/o/c70f2da0-9df7-4f2d-b792-f1ff339afe50.jpg?alt=media&token=4e2317d4-6780-4ad2-9eae-6b24ef3b7c31"
-    },
-  ];
 
   return (
     <div className="py-20">
       <h1 className="text-xl md:text-2xl font-bold mb-10 text-center md:text-start">
-        <span className="text-primary-0">
+        <span className="text-secondary">
           <Typewriter
             words={['My Projects']}
             loop={1}
@@ -134,16 +123,16 @@ export default function Projects() {
         {projectList.map((project, index) => (
           <div
             key={index}
-            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row transition-transform transform hover:scale-105"
+            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform transform hover:scale-105"
           >
             <img
               src={project.image}
               alt={project.title}
-              className="w-full md:w-1/3 h-48 md:h-auto object-cover"
+              className="w-full"
             />
             <div className="p-6 flex flex-col justify-between">
               <div>
-                <h2 className="text-lg md:text-xl font-semibold text-primary-0 mb-2">
+                <h2 className="text-lg md:text-xl font-semibold text-secondary mb-2">
                   {project.title}
                 </h2>
                 <p className="text-gray-200 mb-4">{project.description}</p>
@@ -153,7 +142,7 @@ export default function Projects() {
                     {project.technologies.map((tech, techIndex) => (
                       <li
                         key={techIndex}
-                        className="bg-gray-800 border text-primary-0 text-xs px-2 py-1 rounded"
+                        className="bg-gray-800 border text-secondary text-xs px-2 py-1 rounded"
                       >
                         {tech}
                       </li>
@@ -188,78 +177,6 @@ export default function Projects() {
         ))}
       </div>
 
-      <div className="flex flex-col mt-20">
-      <h1 className="text-lg md:text-xl font-bold mb-10 text-center md:text-start">
-        <span className="text-primary-0">
-          <Typewriter
-            words={['My Android Application Projects']}
-            loop={1}
-            cursor
-            cursorStyle='|'
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          />
-        </span>
-      </h1>
-      <div className="grid grid-cols-1 xl:grid-cols-2 gap-8">
-        {projecAptList.map((project, index) => (
-          <div
-            key={index}
-            className="bg-gray-800 rounded-lg shadow-lg overflow-hidden flex flex-col md:flex-row transition-transform transform hover:scale-105"
-          >
-            <img
-              src={project.image}
-              alt={project.title}
-              className="w-full md:h-96 bject-cover"
-            />
-            <div className="p-6 flex flex-col justify-between">
-              <div>
-                <h2 className="text-lg md:text-xl font-semibold text-primary-0 mb-2">
-                  {project.title}
-                </h2>
-                <p className="text-gray-200 mb-4">{project.description}</p>
-                <div className="mb-4">
-                  <h3 className="font-semibold text-gray-400">Technologies:</h3>
-                  <ul className="flex flex-wrap gap-2 mt-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <li
-                        key={techIndex}
-                        className="bg-gray-800 border text-primary-0 text-xs px-2 py-1 rounded"
-                      >
-                        {tech}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-              {project.private ? (
-                <p className="text-gray-400">This project is private. Contact me for a demo.</p>
-              ) : (
-                <div className="flex gap-4">
-                  <a
-                    href={project.demoLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gray-600 text-white py-2 px-4 rounded hover:bg-primary-1 hover:translate-y-[-0.5rem] transition-transform"
-                  >
-                    Demo
-                  </a>
-                  <a
-                    href={project.codeLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-gray-800 text-white py-2 px-4 rounded hover:bg-gray-700 transition-transform"
-                  >
-                    Code
-                  </a>
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
-      </div>
     </div>
   );
 }

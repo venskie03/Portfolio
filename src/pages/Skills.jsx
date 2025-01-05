@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <div className='py-20'>
       <h1 className="text-xl md:text-2xl font-bold mb-10 text-center md:text-start">
-        <span className="text-primary-0">
+        <span className="text-secondary">
           <Typewriter
             words={['Skills in Development']}
             loop={1}
@@ -19,7 +19,7 @@ export default function Skills() {
 
       <div className="frontend mb-10">
         <h2 className="text-xl font-semibold mb-6 text-center md:text-start">
-          <span className="font-[300] text-tertiary-0">
+          <span className="font-[300] text-tertiary">
             <Typewriter
               words={['Front-end Tech Stack']}
               loop={1}
@@ -38,7 +38,7 @@ export default function Skills() {
 
       <div className="backend mb-10">
         <h2 className="text-xl font-semibold mb-6 text-center  md:text-start">
-          <span className="font-[300] text-tertiary-0">
+          <span className="font-[300] text-tertiary">
             <Typewriter
               words={['Back-end Tech Stack']}
               loop={1}
@@ -57,7 +57,7 @@ export default function Skills() {
 
       <div className="version-control mb-10">
         <h2 className="text-xl font-semibold mb-6 text-center  md:text-start">
-          <span className="font-[300] text-tertiary-0">
+          <span className="font-[300] text-tertiary">
             <Typewriter
               words={['Version Control']}
               loop={1}

@@ -7,10 +7,10 @@ export default function SideBar() {
   return (
     <aside className="md:sidebar-sticky sidebar justify-start fixed md:flex hidden shadow-gray-600 shadow-xl">
       <section className="sidebar-title flex flex-col items-center p-4 gap-4 ">
-        <img src="./profile.jpg" className="max-w-44  rounded-tr-3xl rounded-bl-3xl rounded-br-[4rem] rounded-tl-[4rem] w-full h-44 border-4 border-primary-0" alt="" />
+        <img src="./profile.jpg" className="max-w-44  rounded-tr-3xl rounded-bl-3xl rounded-br-[4rem] rounded-tl-[4rem] w-full h-44 border-4 border-secondary" alt="" />
    <div className="">
-   <h1 className="text-xl text-primary-0">Kevin kyle Ganados</h1>
-   <h2 className="font-[200] text-lg text-center mt-2 border-b-[1px] border-b-primary-0">Jr. FullStack Developer</h2>
+   <h1 className="text-xl text-secondary">Kevin kyle Ganados</h1>
+   <h2 className="font-[200] text-lg text-center mt-2 border-b-[1px] border-b-secondary">FullStack Developer</h2>
    </div>
     
     <div className="icons text-2xl flex gap-4">
@@ -25,25 +25,25 @@ export default function SideBar() {
           <section className="menu-section px-4">
             <a href="/" className="menu-items">
               <li className="menu-item text-lg">
-               <IoHome />
+               <IoHome className="text-secondary" />
                 <span>Home</span>
               </li>
             </a>
             <a href="/about" className="menu-items">
               <li className="menu-item text-lg">
-               <FaUser  />
+               <FaUser  className="text-secondary" />
                 <span>About Me</span>
               </li>
             </a>
             <a href="/skills" className="menu-items">
               <li className="menu-item text-lg">
-              <FaLightbulb />
+              <FaLightbulb className="text-secondary" />
                 <span>Skills</span>
               </li>
             </a>
             <a href="/myprojects" className="menu-items">
               <li className="menu-item text-lg">
-               <AiFillProject />
+               <AiFillProject  className="text-secondary"/>
                 <span>Projects</span>
               </li>
             </a>
